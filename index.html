@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arquivo pessoal e redações de Thiago Hening Fierakoski.">
+  <title>Thiago Hening Fierakoski</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#abertura" class="logo" aria-label="Início">
+        <span class="logo-mark">TH</span>
+        <span class="logo-text">THIAGO H. FIERAKOSKI</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#abertura" data-section="abertura" class="nav-link active">INÍCIO</a></li>
+          <li><a href="#memorias" data-section="memorias" class="nav-link">MEMÓRIAS</a></li>
+          <li><a href="#redacoes" data-section="redacoes" class="nav-link">REDAÇÕES</a></li>
+          <li><a href="#epilogo" data-section="epilogo" class="nav-link">EPÍLOGO</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav>
+      <ul>
+        <li><a href="#abertura" data-section="abertura">INÍCIO</a></li>
+        <li><a href="#memorias" data-section="memorias">MEMÓRIAS</a></li>
+        <li><a href="#redacoes" data-section="redacoes">REDAÇÕES</a></li>
+        <li><a href="#epilogo" data-section="epilogo">EPÍLOGO</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <section class="section section-abertura" id="abertura" data-section="abertura">
+      <div class="cover-grid">
+        <div class="cover-left">
+          <div class="cover-meta">
+            <span class="meta-item">ARQUIVO PESSOAL</span>
+            <span class="meta-divider">·</span>
+            <span class="meta-item">SANTA CATARINA</span>
+            <span class="meta-divider">·</span>
+            <span class="meta-item">2009 A 2026</span>
+          </div>
+          <h1 class="cover-title">
+            <span class="title-line">THIAGO</span>
+            <span class="title-line">HENING</span>
+            <span class="title-line accent">FIERAKOSKI</span>
+          </h1>
+          <p class="cover-highlight">
+            Um registro pessoal da trajetória escolar e dos textos que escrevi ao longo do caminho.
+          </p>
+          <div class="cover-intro">
+            <p>
+              Meu nome é <strong>Thiago Hening Fierakoski</strong>. Este espaço reúne um pouco da minha vida escolar em Santa Catarina e as redações produzidas nas aulas. É uma forma de organizar o que ficou pelo caminho e apresentar o que fui construindo até aqui.
+            </p>
+          </div>
+          <div class="cover-actions">
+            <button class="btn btn-primary" id="btn-entrar-historia" type="button">VER MINHA TRAJETÓRIA</button>
+            <button class="btn btn-secondary" id="btn-explorar-textos" type="button">VER AS REDAÇÕES</button>
+          </div>
+        </div>
+        <div class="cover-right">
+          <div class="cover-visual">
+            <div class="giant-number" aria-hidden="true">17</div>
+            <div class="photo-frame main-photo">
+              <!-- FOTO: coloque foto.jpg na mesma pasta do index.html -->
+              <img src="foto.jpg" alt="Thiago Hening Fierakoski" class="cover-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="photo-placeholder" data-label="Foto principal" style="display:none;">
+                <span class="placeholder-icon">📷</span>
+                <span class="placeholder-text">Coloque foto.jpg<br>na pasta do site</span>
+              </div>
+              <div class="photo-caption">THIAGO HENING FIERAKOSKI · 2026</div>
+            </div>
+            <div class="geo-accent geo-1"></div>
+            <div class="geo-accent geo-2"></div>
+            <div class="explore-hint">
+              <span class="hint-line"></span>
+              <span class="hint-text">EXPLORE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>ROLE PARA EXPLORAR</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="section section-memorias" id="memorias" data-section="memorias">
+      <div class="section-header">
+        <div class="section-label">ARQUIVO DE MEMÓRIAS</div>
+        <h2 class="section-title">Trajetória escolar</h2>
+        <p class="section-subtitle">Clique em cada etapa para abrir o registro daquele período.</p>
+      </div>
+      <div class="memory-wall" id="memory-wall">
+        <article class="memory-card" data-chapter="1" tabindex="0" role="button" aria-label="Abrir capítulo 01">
+          <div class="card-number">01</div>
+          <div class="card-info">
+            <h3>As primeiras escolas</h3>
+            <span class="period">Início</span>
+            <p class="teaser">Antes do Gleidis passei por umas três escolas. Não lembro bem os nomes.</p>
+            <span class="card-cta">ABRIR →</span>
+          </div>
+        </article>
+        <article class="memory-card large" data-chapter="2" tabindex="0" role="button" aria-label="Abrir capítulo 02">
+          <div class="card-number">02</div>
+          <div class="card-info">
+            <h3>Gleidis Rodrigues</h3>
+            <span class="period">Timbó Grande, SC</span>
+            <p class="teaser">Fiquei até o segundo ou terceiro ano do fundamental. Uma das primeiras que realmente lembro.</p>
+            <span class="card-cta">ABRIR →</span>
+          </div>
+        </article>
+        <article class="memory-card" data-chapter="3" tabindex="0" role="button" aria-label="Abrir capítulo 03">
+          <div class="card-number">03</div>
+          <div class="card-info">
+            <h3>Norma Mônica Sabel</h3>
+            <span class="period">Gaspar, SC</span>
+            <p class="teaser">Fiquei até o nono ano. Foi um período longo e estável nessa escola.</p>
+            <span class="card-cta">ABRIR →</span>
+          </div>
+        </article>
+        <article class="memory-card" data-chapter="4" tabindex="0" role="button" aria-label="Abrir capítulo 04">
+          <div class="card-number">04</div>
+          <div class="card-info">
+            <h3>Honório Miranda</h3>
+            <span class="period">Gaspar, SC</span>
+            <p class="teaser">Comecei o primeiro ano do Ensino Médio aqui.</p>
+            <span class="card-cta">ABRIR →</span>
+          </div>
+        </article>
+        <article class="memory-card large" data-chapter="5" tabindex="0" role="button" aria-label="Abrir capítulo 05">
+          <div class="card-number">05</div>
+          <div class="card-info">
+            <h3>Morelli</h3>
+            <span class="period">Meio do 1º ano</span>
+            <p class="teaser">Entrei no meio do primeiro ano. Outra adaptação, outra turma.</p>
+            <span class="card-cta">ABRIR →</span>
+          </div>
+        </article>
+        <article class="memory-card" data-chapter="6" tabindex="0" role="button" aria-label="Abrir capítulo 06">
+          <div class="card-number">06</div>
+          <div class="card-info">
+            <h3>Do segundo ano pra frente</h3>
+            <span class="period">Ensino Médio</span>
+            <p class="teaser">Seguir em frente, escrever as redações e tentar organizar o que vem depois.</p>
+            <span class="card-cta">ABRIR →</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-redacoes" id="redacoes" data-section="redacoes">
+      <div class="section-header">
+        <div class="section-label">BIBLIOTECA DIGITAL</div>
+        <h2 class="section-title">As redações</h2>
+        <p class="section-subtitle">Textos que escrevi em sala. Temas diferentes, o mesmo esforço de tentar argumentar direito.</p>
+      </div>
+      <div class="library-table" id="library-table" aria-label="Coleção de 17 redações"></div>
+    </section>
+
+    <section class="section section-epilogo" id="epilogo" data-section="epilogo">
+      <div class="epilogo-inner">
+        <div class="epilogo-meta">
+          <span class="seal">2026</span>
+          <span class="year-mark">ENSINO MÉDIO</span>
+        </div>
+        <h2 class="epilogo-title">Encerrando essa etapa</h2>
+        <p class="epilogo-lead">O Ensino Médio chega ao fim. O que vem depois ainda está em aberto.</p>
+        <div class="epilogo-reveal" id="epilogo-reveal">
+          <button class="btn btn-primary btn-reveal" id="btn-revelar-epilogo" type="button">LER O TEXTO</button>
+        </div>
+        <div class="epilogo-content" id="epilogo-content" hidden>
+          <div class="epilogo-text">
+            <p>Terminar o Ensino Médio mistura alívio e dúvida. Tem a sensação de ter cumprido uma etapa longa e, ao mesmo tempo, a pergunta do que vem na sequência.</p>
+            <p>Ao longo desses anos escrevi bastante. As redações que estão neste site são parte disso. Cada tema pedia um jeito diferente de organizar ideia, argumento e conclusão. Nem sempre ficou fácil, mas o exercício de escrever ajudou a pensar com mais clareza.</p>
+            <p>Também ficam as pessoas. Colegas de sala, professores que cobravam e os que davam uma força quando a matéria apertava. O cotidiano da escola, os intervalos e os trabalhos em grupo fazem parte do que essa fase significou.</p>
+            <p>Agora é outro ciclo. Ainda não está tudo definido, e tudo bem. O que importa é seguir com o que já aprendi até aqui e continuar construindo o resto no caminho.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Thiago Hening Fierakoski · 2009 a 2026</p>
+      <p class="footer-note">Projeto final de Programação Web</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="memory-modal" role="dialog" aria-modal="true" aria-labelledby="memory-modal-title" hidden>
+    <div class="modal-backdrop" data-close="memory"></div>
+    <div class="modal-panel memory-panel">
+      <button class="modal-close" data-close="memory" aria-label="Fechar">×</button>
+      <div class="memory-modal-content">
+        <div class="memory-modal-body">
+          <span class="memory-modal-number" id="memory-modal-number">01</span>
+          <h3 id="memory-modal-title">Título</h3>
+          <span class="memory-modal-period" id="memory-modal-period">2010–2012</span>
+          <div class="memory-modal-text" id="memory-modal-text"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="essay-modal" role="dialog" aria-modal="true" aria-labelledby="essay-modal-title" hidden>
+    <div class="modal-backdrop" data-close="essay"></div>
+    <div class="modal-panel essay-panel">
+      <button class="modal-close" data-close="essay" aria-label="Fechar">×</button>
+      <div class="essay-header">
+        <span class="essay-number" id="essay-modal-number">01</span>
+        <span class="essay-progress" id="essay-modal-progress">01 DE 17</span>
+      </div>
+      <h3 class="essay-title" id="essay-modal-title">Título da redação</h3>
+      <div class="essay-body" id="essay-modal-body"></div>
+      <div class="essay-nav">
+        <button class="btn btn-ghost" id="essay-prev" type="button">← ANTERIOR</button>
+        <button class="btn btn-ghost" id="essay-next" type="button">PRÓXIMA →</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
